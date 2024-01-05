@@ -1,0 +1,534 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+     }
+    ::-webkit-scrollbar {
+      width: 5px; /* Ancho de la barra de desplazamiento */
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #040a1c; /* Color del fondo */
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #a99fff /* Color del control deslizante */
+    }
+    
+    
+    a{
+    color:white;
+    text-decoration:none;
+    }
+    /*-------------------------------------------------------------*/
+    
+    .header-container{
+    width:100%;
+    min-height:48vw;
+    background-repeat:no-repeat;
+    background-image: linear-gradient(151deg, rgba(12,46,130,0.5) 16%, rgba(2,0,36,0.7)),url(img/univer.jpg) ;
+    background-position:center;
+    background-size:cover;
+    
+    }
+    
+    
+    .enca{
+    width:100%;
+    height:8rem;
+    display:inline-flex;
+    justify-content:space-between;
+    padding:2rem 0 0 0;
+    
+    }
+    
+    
+    .logo{
+    display:flex;
+    color:white;
+    font-size:1.5rem;
+    font-weight:600;
+    margin-right:5rem;
+    }
+    .logo i{
+    color:#f82727;
+    font-size:2rem;
+    margin-right:0.5rem
+    }
+    
+    .enca-links ul{
+    display:flex;
+    list-style:none; 
+    
+    }
+    .enca-links li{
+    transition:0.3s transform;
+    }
+    .enca-links li:hover{
+     transform:scale(1.090); 
+    }
+    .enca li a{
+    margin-left:2rem;
+    font-size:1.1rem;
+    transition:0.1s border;
+    
+    }
+    
+    .enca li a:hover{
+    border-bottom:solid 2px #ff4040; 
+    
+    }
+    
+    
+    
+    
+    .lin2{
+    position:fixed;
+    background:#ff4040;
+    width:14rem;
+    height:100%;
+    top:0;
+    left:-20rem;
+    list-style:none;
+    direction:column;
+    align-items:center;
+    transition:0.6s all;
+    z-index:200;
+    }
+    
+    
+    .lin2 ul{
+    list-style:none;
+    margin:0.5rem 0;
+    }
+    
+    .lin2  li{
+    margin-top:3rem; 
+    
+    }
+    
+    
+    
+    .centro{
+    color:white;
+    text-align: center;
+    margin-top:2rem;
+    }
+    
+    .centro h1{
+    margin-bottom:1rem;
+    font-size:3rem;
+    }
+    .centro p{
+    font-size:1.2rem;
+    letter-spacing:1.10px;
+    
+    }
+    
+    .centro input{
+    padding:0.8rem 1.7rem; 
+    font-size:1.05rem;
+    cursor:pointer;
+    border:1px solid white;
+    backdrop-filter: blur(6px);
+    transition:0.5s transform;
+    color:white;
+    background:rgba(0,0,0,0);
+    margin-top:2rem;
+    }
+    
+    .centro input:hover{
+     transform:scale(1.050); 
+    
+    }
+    /*------------------------------------cursos-------------------------------*/
+    .cursos-ofrecemos{
+    text-align:center;
+    margin-top:3rem;
+    font-size:1.4rem;
+    
+    }
+    .cursos-ofrecemos p{
+    font-size:0.9rem;
+    margin-top:0.4rem;
+    color:#707070;
+    
+    }
+    .cursos-total{
+    display:flex;
+    justify-content:space-around;
+    }
+    
+    .curs{
+    margin-top:2rem;
+    width:18rem;
+    height:15rem;
+    text-align:center;
+    background:#feece0;
+    border-radius:1rem;
+    padding:0.8rem;
+    }
+    
+    .curs h2{
+      margin-bottom:0.7rem;
+    }
+    
+    .campus-container{
+    text-align:center;
+    margin-top:8rem;
+    font-size:1.4rem;
+    
+    }
+    
+    .campus-container p{
+    font-size:0.9rem;
+    margin-top:0.4rem;
+    color:#707070;
+    
+    }
+    
+    .ciudades-campus{
+    margin:3rem 0 0 9rem;
+    display:flex;
+    flex-wrap:wrap;
+    
+    }
+    
+    .im{
+    width:17rem;
+    height:24rem;
+    margin-left:4rem;
+    background-size:cover;
+    background-position:center;
+    border-radius:1rem;
+    font-size:0.9rem;
+    transition:1s background-image;
+    cursor:pointer;
+    transition: all 1s;
+    box-shadow:1px 2px 4px black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-shadow:2px 2px 2px black;
+    }
+    
+    .im p{
+    color:white;
+    font-size:1.5rem;
+    }
+    
+    
+    .im:hover{
+    filter:brightness(0.8);
+    }
+    
+    
+    .cordoba {
+    background-image: url(img/cordoba.jpg);
+    }
+    .santa{
+    background-image:url(img/santafe.jpg);
+    }
+    .buenos{
+    background-image:url(img/buenos.jpg);
+    }
+    
+    
+    .ciudades-campus{
+    margin:3rem 0 0 9rem;
+    display:flex;
+    
+    }
+    
+    
+    
+    .ventajas-container{
+    text-align:center;
+    margin-top:6rem;
+    font-size:1.4rem;
+    
+    }
+    .ventajas-palabras{
+    margin-top:8rem;
+    }
+    
+    .ventajas{
+    display:flex;  
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:3rem 0;
+    }
+    
+    .letravent{
+    margin:0.7rem 0 0 3rem;
+    font-size:0.8rem;
+    text-align:left;
+    }
+    
+    .letravent p{
+    margin:0 0 .5rem 0;
+    }
+    .img{
+    width:17rem;
+    height:15rem;
+    background-size:cover;
+    background-position:center;
+    border-radius:1rem;
+    border:black;
+    margin-left:3rem;
+    }
+    
+    .img-biblio{
+    background-image: url(img/biblio.jpg);
+    }
+    .img-basquet{
+    background-image:url(img/basquet.jpg);
+    }
+    .img-cafe{
+    background-image:url(img/cafeteria.jpg);
+    }
+    
+    
+    
+    
+    
+    
+    footer{
+    color:#adc0d1;
+    padding:1rem;
+    background:rgb(45,63,80);
+    text-align:center;
+    margin-top:6rem;
+    font-size:.85rem;
+    }
+    footer i{
+    font-size:1.5rem;
+    margin:0 1rem;
+    cursor:pointer;
+    transition:1s transform
+    }
+    footer i:hover{
+    transform:scale(1.11)
+    }
+    .footer-arriba{
+    display:flex;
+    }
+    
+    footer a{
+    text-decoration:underline;
+    }
+    footer b{
+    color:#adc0d1;
+    margin:0 .5rem;
+    }
+    footer p{
+    border-bottom:1px solid #adc0d1;
+    display:block;
+    flex:1;
+    margin-bottom:0.4rem;
+    }
+    
+    footer h3{
+    margin:1rem 0 0.35rem 0;
+    }
+    
+    .barras {
+    visibility:hidden; 
+    color:#ffffff;
+    font-size:1.7rem;
+    cursor:pointer;
+    margin:0 0 0 4rem;
+    position:absolute;
+    }
+    
+    .lin2 .x{
+    color:white;
+    font-size:1.5rem;
+    cursor:pointer;
+    margin:0.5rem 1rem;
+    }
+    
+    .x-cont{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    }
+    
+    
+    
+    /*----------------------Media queries------------------*/
+    
+    @media (max-width: 1080px){
+    .cursos-ofrecemos{font-size:1.1rem;}
+    .cursos-ofrecemos p{font-size:0.8rem;}
+    .cursos-total{flex-wrap:wrap;}
+    .curs{
+    width:14rem;
+    height:12rem;
+    font-size:0.8rem;
+    }
+    .curs h2{margin-bottom:0.7rem;}
+    
+    .ciudades-campus{
+    margin:0;
+    justify-content:center;
+    }
+    .im{
+    margin:1rem 1rem;
+    }
+    .ventajas{
+    margin-top:3rem;
+    margin-left:-3rem;
+     }
+    }
+    
+    
+    @media (max-width: 980px){
+    .centro{
+     margin-top:-2rem;
+     }
+     
+    }
+    
+    
+    @media (max-width: 850px){
+      .header-container{
+    height:62vw;
+     }
+     .enca li a{
+    margin-left:1.4rem;
+    font-size:0.9rem;
+    }
+    
+    .logo{
+    font-size:1.2rem;
+    margin-left:2.5rem;
+    }
+    .logo i{
+      font-size:1.7rem;
+      margin-top:-0.3rem;
+    }
+    }
+    
+    @media (max-width: 680px){
+      .header-container{height:84vw;} 
+      .enca-links{visibility:hidden}
+     .barras{visibility:visible;}
+     
+     .centro h1{
+      font-size: 1.9rem;
+     }
+     .centro p{
+      font-size:1.3rem;
+      margin-top:-0.5rem; 
+     }
+     .centro input{
+      padding:0.8rem 1.4rem; 
+    font-size:1rem;
+     }
+     .centro{
+      margin-top:1.5rem;
+    }
+    
+    }
+    
+    
+    
+    @media (max-width: 530px){
+      .header-container{height:105vw;}
+      .centro h1{ font-size: 1.6rem;}
+     .centro p{
+      font-size:1.1rem;
+      margin-top:-0.5rem; 
+     }
+     .centro input{
+      padding:0.8rem 1.4rem; 
+    font-size:1rem;
+     }
+      .barras{margin:0.2rem 0 0 2rem; font-size:1.5rem;}
+     }
+     
+    
+    @media (max-width: 420px){
+      .header-container{height:135vw;}
+     .br{display:none;}
+     .logo{
+    font-size:1.1rem;
+    margin-left:2rem;
+    }
+    .logo i{
+      font-size:1.5rem;
+      margin-top:-0.3rem;
+    }
+    .centro{margin-top:-0.2rem;}
+    .im{width:12rem;height:20rem}
+    .lin2{width:11rem;}
+    }
+    
+    @media (max-width: 340px){
+      .header-container{height:145vw;}
+     .centro h1{
+      font-size: 1.4rem;
+     }
+    
+      .centro input{
+      padding:0.55rem 1.2rem; 
+    font-size:0.8rem;
+     }
+    .curs{
+    width:10.5rem;
+    font-size:0.76rem
+    }
+    
+    
+    @media (max-width: 281px){
+      .logo{margin-left:0.8rem}
+      .header-container{
+     height:140vw;
+    }
+     .centro h1{
+      font-size: 1.2rem;
+     }
+     .centro p{
+      font-size:0.6rem;
+      margin-top:-0.5rem; 
+     }
+     .centro{
+      margin-top:-1.5rem;
+     }
+     .img{
+      width:15rem;
+      height:15rem;
+    
+     }
+     .curs{
+    width:12rem;
+    font-size:0.76rem;
+    
+    
+    }
+    
+    .logo{margin: 0 0 0 7rem;}
+    }
+    
+    
+    @media (max-width: 850px){
+    
+    .logo {
+    margin: 0.8rem 4rem 0 0;
+    }
+    }
+    
+    
+    @media (min-width: 851px){ 
+     .lin2{
+      transition:0.001s all;
+    visibility:hidden;
+     }
+    
+    }
+    
+    
+    .cafe{
+    margin-left:0.7rem;
+    }
+}
